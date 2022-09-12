@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /**
  * main - print single digit numbers
  *
@@ -9,6 +8,7 @@
  * Return: Always 0 (Success)
  *
  */
+
 int main(void)
 {
 	int i;
@@ -23,6 +23,8 @@ int main(void)
 			putchar(44);
 			putchar(32);
 		}
+		i++;
+	}
 
 		putchar(10);
 
