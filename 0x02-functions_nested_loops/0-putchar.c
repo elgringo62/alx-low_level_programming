@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - entry point
  *
@@ -10,7 +9,6 @@
  * Return: On success is 0
  *
  */
-
 int main(void)
 {
 	_putchar('_');
