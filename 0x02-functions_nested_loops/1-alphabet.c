@@ -1,12 +1,6 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * description: function that prints the alphabet
- *
- * in lowercase, followed by a new line
- *
  * print_alphabet - Prints the alphabet in l.case
  *
  * Return (0) Always success
