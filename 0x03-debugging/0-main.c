@@ -5,8 +5,7 @@
  *
  * if integer is positive or negative
  *
- * Return : (0) Alwyas a success
- *
+ * Return: (0) Alwyas a success
  */
 
 int main(void)
