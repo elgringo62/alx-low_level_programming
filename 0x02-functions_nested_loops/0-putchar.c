@@ -1,24 +1,23 @@
-#include <unistd.h>
+#include "main.h"
 /**
- * _putchar - writes chhar c to stdoutput
+ * _putchar
+ * main - entry point
  *
- * @c: is the printed character
- *
- * Return: On success is 1
- * On error -1 is returned
+ * Return: On success is 0
  *
  */
 
 int main(void)
 {
-	char text[10] = "_putchar";
-	int i = 0;
-			
-	for (i = 0; i < 9; i++)
-{
-	_putchar(text[i]);
-}
-	putchar('\n');
-					
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
 }
