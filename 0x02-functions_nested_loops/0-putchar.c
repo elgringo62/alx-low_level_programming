@@ -9,7 +9,16 @@
  *
  */
 
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	char text[10] = "_putchar";
+	int i = 0;
+			
+	for (i = 0; i < 9; i++)
+{
+	_putchar(text[i]);
+}
+	putchar('\n');
+					
+	return (0);
 }
