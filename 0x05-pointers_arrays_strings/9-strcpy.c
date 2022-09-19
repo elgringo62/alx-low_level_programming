@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * _strcpy - copies the string grom src to dest
  *
  * @dest: destination to copy string to
