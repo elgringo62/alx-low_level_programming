@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+ * void prototypes()
+ * char prototypes()
+ * int prototypes()
+ */
+
 int _putchar(char c);
 void putchar_many(int n);
 
