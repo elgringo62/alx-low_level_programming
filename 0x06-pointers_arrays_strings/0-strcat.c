@@ -8,24 +8,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int index;
-	int index2;
-	char strpiler[100]
+	int dlen = 0, i;
 
-	for (index = 0; *(dest + index) != '\0'; index++)
+	while (dest[dlen])
 	{
-		*(strpiler + index) = *(dest + index);
+		dlen++;
 	}
-	for (index2 = 0; *(src + index2) != '\0'; index2++)
+
+	for (i = 0; src[i] != 0; i++)
 	{
-		*(strpiler + index) = *(src + index2);
-		index++;
+		dest[dlen] = src[i];
+		dlen++;
 	}
-	*(strpiler + index) = *(src + index2);
-	for (index = 0; *(strpiler + index) != '\0'; index++)
-	{
-		*(dest + index) = *(strpiler + index);
-	}
-	*(dest + index) = *(strpiler + index);
+
+	dest[dlen] = '\0';
 	return (dest);
 }
