@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - call to function
+ */
+
 int main(void)
 {
 	int n;
