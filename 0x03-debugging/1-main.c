@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: causes an infinite loop
+ * main - causes an infinite loop
+ *
+ * Description: Anticipates an infinite loop
  *
  * Return: ALways success (0)
  */
@@ -16,7 +18,7 @@ int main(void)
 /**
  * Description: main - causes an infinite loop
  *
- * \\o/\n - Avoids infinite loop
+ * printf - Avoids infinite loop therefore prining on screen
  *
  * while (i < 10)
  * {
