@@ -2,6 +2,7 @@
 
 /**
  * main - print program name then new line
+ * @argv: array of strings passed on to main
  * @argc: number of arguments passed to main
  * Return: (0) Always success
  */
