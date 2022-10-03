@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - Print a number followed by a new line
- * @argc: argument count
- * @argv: argument vector
- * Return: (0) Always success
+ * main - prints the number of arguments passed into the program
+ * @argc: int
+ * @argv: list
+ * Return: 0 Always success
  */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char const *argv[])
 {
-	printf("%s\n", argc - 1);
-
+	(void)argv;
+	printf("%i\n", argc - 1);
 	return (0);
 }
