@@ -3,6 +3,19 @@
 #include <stdio.h>
 
 /**
+ * _strlen - find length of a string
+ * @s: string
+ * Return: int
+ */
+
+int _strlen(char *s)
+{
+	int size = 0;
+	for (; s[size] != '\0'; size++);
+	return (size);
+}
+
+/**
  * str_concat - Concatenates two strings of any size
  * @s1: the first string to concatenate
  * @s2: the second string to concatenate
@@ -11,38 +24,27 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int length1, length2, length3, i;
-	char *s;
+	int size1, size2, i;
+	char *m;
 
 	if (s1 == NULL)
-		s1 = "";
-
+		s1 = "\0";
 	if (s2 == NULL)
-		s2 = "";
-	
-	length1 + 0;
-	while (*(s1 + length1) != '\0')
+		s2 = "\0";
+
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
+	m = malloc((size1 + size2) *sizeof(char) + 1);
+	if (m == 0)
+		return (0);
+
+	for (i = 0; i <= size1 + size2; i++)
 	{
-		length1++;
+		if (i < size1)
+			m[i] = s1[i];
+		else
+			m[i] = s2[i - size1];
 	}
-
-	length2 = 0;
-	while (*(s2 + length2) != '\0')
-	{
-		length2++;
-	}
-
-	length3 = length1 + length2;
-
-	arr = (char*) malloc(length3 * sizeof(char) + 1);
-
-	if (s == NULL)
-		return (NULL);
-
-	for (i = 0; i < length1; i++)
-		s[i] = s1[i];
-	for (i = 0; i < length2; i++)
-		s[i + length1] = s2[i];
-
-	return (s);
+	m[i] = '\0';
+	return (m);
 }
