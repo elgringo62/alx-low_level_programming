@@ -4,6 +4,7 @@
 /**
  * add_nodeint - Adds a new node at the beginning of a linked list
  * @head: The head of the linked list
+ * @n: The value to add to the new node
  * Return: The address of the new element, or NULL it failed
  */
 
