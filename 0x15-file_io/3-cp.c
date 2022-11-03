@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * argc: The argument count
+ * @argc: The argument count
  * @argv: The argument vector
  * Return: ...
  */
@@ -37,7 +37,6 @@ void copy_file(const char *src, const char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
-
 	tfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	while ((readed = read(ofd, buff, 1024)) > 0)
 	{
@@ -52,6 +51,7 @@ void copy_file(const char *src, const char *dest)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
+
 	if (close(ofd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ofd);
